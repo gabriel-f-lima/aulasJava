@@ -54,7 +54,35 @@ public class lavalava {
 
         System.out.println("\n");
         System.out.println("O amaciante tem um valor fixo de R$ 16,99 e é incluso no valor total");
-        valorTotal = valorTotal + 16.99;
+
+        System.out.println("\n");
+        System.out.println("Quanto tempo de lavagem deseja? A tabela de valores é a seguinte:\n0-30 Minutos: R$ 26,99\n31-50 Minutos: R$ 29,99\n51-90 Minutos: R$ 39,99\nAcima de 91 Minutos: R$ 46,99");
+        int tempoLavagem = entrada.nextInt();
+        double valorTempoLavagem = 0.00;
+
+        if (tempoLavagem >= 0 && tempoLavagem <= 30) {
+
+            valorTempoLavagem = 26.99;
+
+        } else if (tempoLavagem > 30 && tempoLavagem <= 50){
+
+            valorTempoLavagem = 29.99;
+
+        } else if (tempoLavagem > 50 && tempoLavagem <= 90){
+
+            valorTempoLavagem = 39.99;
+
+        } else if (tempoLavagem > 90){
+
+            valorTempoLavagem = 46.99;
+
+        } else {
+
+            System.out.println("Opção inválida escolha umas das opções disponíveis");
+
+        }
+        double amaciante = 16.99;
+        valorTotal = valorTotal + amaciante + valorTempoLavagem;
         System.out.println("\n");
         System.out.printf("O valor total da lavagem é: R$ %.2f%n", valorTotal);
         entrada.close();
