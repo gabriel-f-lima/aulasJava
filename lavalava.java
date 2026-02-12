@@ -30,19 +30,19 @@ public class lavalava {
 
         System.out.println("Qual sabão você deseja comprar? Digite 1 para OMO, 2 para Tixan e 3 para Brilhante");
         int opcaoSabao = entrada.nextInt();
-        double valorSabão = 0.00;
+        double valorSabao = 0.00;
 
         if (opcaoSabao == 1) {
 
-            valorSabão = 14.99;
+            valorSabao = 14.99;
 
         } else if (opcaoSabao == 2){
 
-            valorSabão = 8.99;
+            valorSabao = 8.99;
 
         } else if (opcaoSabao == 3){
 
-            valorSabão = 11.99;
+            valorSabao = 11.99;
 
         } else {
 
@@ -50,7 +50,7 @@ public class lavalava {
 
         }
 
-        double valorTotal = valorRoupas + valorSabão;
+        double valorTotal = valorRoupas + valorSabao;
 
         System.out.println("\n");
         System.out.println("O amaciante tem um valor fixo de R$ 16,99 e é incluso no valor total");
